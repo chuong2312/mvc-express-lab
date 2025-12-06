@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Sài Gòn - Ký Ức Trong Từng Giọt Đắng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">☕ Café Sài Gòn</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#story">Câu chuyện</a></li>
+                <li><a href="#menu">Thực đơn</a></li>
+                <li><a href="#reviews">Đánh giá</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="cartBtn">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="btn-signup" id="signupBtn">Đăng ký</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slider" id="home">
+        <div class="slider-container">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+                <div class="slide-content">
+                    <h2>Hương Vị Sài Gòn Xưa</h2>
+                    <p>Gìn giữ nét văn hóa cà phê vợt truyền thống qua bao thế hệ.</p>
+                    <a href="#menu" class="btn-hero">Khám Phá Ngay</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('anh-pho-co-ha-noi-1.jpg');">
+                <div class="slide-content">
+                    <h2>Không Gian Hoài Niệm</h2>
+                    <p>Nơi thời gian lắng đọng bên ly cà phê phin tí tách.</p>
+                    <a href="#story" class="btn-hero">Về Chúng Tôi</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+    </div>
+
+    <section id="story" class="about-section reveal">
+        <div class="container">
+            <h2 class="section-title">Câu Chuyện Của Chúng Tôi</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Không gian quán">
+                </div>
+                <div class="about-text">
+                    <h3>Từ Một Góc Phố Nhỏ...</h3>
+                    <p>
+                        Café Sài Gòn không chỉ là một quán nước, đó là nơi lưu giữ những ký ức. Khởi nguồn từ một xe đẩy cà phê nhỏ vào những năm 90, chúng tôi lớn lên cùng nhịp thở hối hả nhưng đầy tình cảm của thành phố này.
+                    </p>
+                    <p>
+                        Chúng tôi tin rằng, một ly cà phê ngon không chỉ nằm ở hạt rang xay đúng điệu, mà còn ở cái "tình" của người pha chế. Tại đây, mỗi giọt cà phê rơi xuống là một nốt trầm trong bản nhạc cuộc sống, giúp bạn sống chậm lại giữa thế giới vội vã.
+                    </p>
+                    <p>
+                        <strong>Sứ mệnh:</strong> Mang hương vị cà phê Việt nguyên bản đến với thế hệ trẻ, kết hợp cùng không gian Vintage để tạo nên một chốn về bình yên.
+                    </p>
+                    <button class="btn-secondary">Xem Thêm Hành Trình</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section reveal">
+        <div class="container">
+            <h2 class="section-title">Thực Đơn Tuyển Chọn</h2>
+            
+            <h3 class="menu-category">☕ Cà Phê Việt Nam</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="/images/ca-phe-sua-da-5.jpg" alt="Cà Phê Sữa Đá">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Cà Phê Sữa Đá</h4>
+                        <p>Đậm đà hương vị phin truyền thống, sữa đặc Ông Thọ.</p>
+                        <div class="price-row">
+                            <span class="price">29.000đ</span>
+                            <button class="add-to-cart" data-name="Cà Phê Sữa Đá" data-price="29000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="/images/cafe-bac-xiu-da_d6b6b74d22d64a0fb48324225e222fa6.jpeg" alt="Bạc Xỉu">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Bạc Xỉu Đá</h4>
+                        <p>Nhiều sữa ít cà phê, hương vị tuổi thơ ngọt ngào.</p>
+                        <div class="price-row">
+                            <span class="price">32.000đ</span>
+                            <button class="add-to-cart" data-name="Bạc Xỉu Đá" data-price="32000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="/images/cafe_trung.jpg" alt="Cà Phê Trứng">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Cà Phê Trứng</h4>
+                        <p>Lớp kem trứng béo ngậy phủ trên nền cà phê nóng.</p>
+                        <div class="price-row">
+                            <span class="price">45.000đ</span>
+                            <button class="add-to-cart" data-name="Cà Phê Trứng" data-price="45000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="menu-category">🍹 Trà & Trái Cây</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Trà Đào">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Trà Đào Cam Sả</h4>
+                        <p>Thanh mát, giải nhiệt với đào miếng giòn tan.</p>
+                        <div class="price-row">
+                            <span class="price">39.000đ</span>
+                            <button class="add-to-cart" data-name="Trà Đào Cam Sả" data-price="39000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sinh Tố Bơ">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Sinh Tố Bơ Dừa</h4>
+                        <p>Bơ sáp dẻo mịn kết hợp cốt dừa béo thơm.</p>
+                        <div class="price-row">
+                            <span class="price">42.000đ</span>
+                            <button class="add-to-cart" data-name="Sinh Tố Bơ Dừa" data-price="42000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="menu-category">🍰 Bánh Ngọt & Ăn Nhẹ</h3>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tiramisu">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Bánh Tiramisu</h4>
+                        <p>Hương vị Ý lãng mạn, mềm tan trong miệng.</p>
+                        <div class="price-row">
+                            <span class="price">40.000đ</span>
+                            <button class="add-to-cart" data-name="Bánh Tiramisu" data-price="40000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="/images/banh_mi_croissant.jpg" alt="Croissant">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Bánh Mì Croissant</h4>
+                        <p>Bánh sừng bò ngàn lớp nướng bơ thơm lừng.</p>
+                        <div class="price-row">
+                            <span class="price">35.000đ</span>
+                            <button class="add-to-cart" data-name="Croissant Bơ" data-price="35000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="/images/banh-mi-chao-sai-gon-jpg.webp" alt="Bánh Mì">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Bánh Mì Chảo</h4>
+                        <p>Đầy đủ topping: trứng, pate, xíu mại, xúc xích.</p>
+                        <div class="price-row">
+                            <span class="price">45.000đ</span>
+                            <button class="add-to-cart" data-name="Bánh Mì Chảo" data-price="45000">Thêm +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section reveal">
+        <div class="container">
+            <h2 class="section-title">Khách Hàng Nói Gì?</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Không gian quán rất tuyệt vời, mang đậm nét hoài cổ. Cà phê sữa đá pha rất vừa miệng, không quá ngọt."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <span>Minh Anh</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Địa điểm lý tưởng để làm việc và chill cuối tuần. Nhạc nhẹ nhàng, nhân viên thân thiện. Sẽ quay lại!"</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <span>Hoàng Nam</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Bánh Tiramisu ở đây là chân ái! Mềm mịn và thơm mùi rượu nhẹ. Rất đáng thử nhé mọi người."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                        <span>Thảo Trang</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section reveal">
+        <div class="container">
+            <h2 class="section-title">Góc Cảm Hứng</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Blog 1">
+                    <div class="blog-content">
+                        <h4>Cách Phân Biệt Arabica và Robusta</h4>
+                        <p>Tìm hiểu sự khác biệt tinh tế giữa hai loại hạt cà phê phổ biến nhất thế giới...</p>
+                        <a href="#">Đọc tiếp →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="/images/anh-ly-ca-phe-chill-28.jpg" alt="Blog 2">
+                    <div class="blog-content">
+                        <h4>Nghệ Thuật Thưởng Thức Cà Phê Phin</h4>
+                        <p>Pha cà phê phin không chỉ là kỹ thuật, đó là một nghệ thuật chờ đợi...</p>
+                        <a href="#">Đọc tiếp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Café Sài Gòn</h3>
+                <p>Nơi lưu giữ hương vị ký ức.</p>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TT</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Liên Hệ</h3>
+                <p>📍 123 Đường Nguyễn Huệ, Q.1, TP.HCM</p>
+                <p>📞 0909 123 456</p>
+                <p>📧 hello@cafesaigon.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Giờ Mở Cửa</h3>
+                <p>Thứ 2 - Thứ 6: 07:00 - 22:00</p>
+                <p>Cuối tuần: 08:00 - 23:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Café Sài Gòn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeCart">&times;</span>
+            <h3>Giỏ Hàng Của Bạn</h3>
+            <div id="cartItems" class="cart-list"></div>
+            <div class="cart-total-section">
+                <span>Tổng cộng:</span>
+                <span id="cartTotal">0đ</span>
+            </div>
+            <button id="checkoutBtn" class="btn-checkout">Thanh Toán Ngay</button>
+        </div>
+    </div>
+
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSignup">&times;</span>
+            <h3>Đăng Ký Thành Viên</h3>
+            <p>Nhận ngay ưu đãi 20% cho lần đầu tiên!</p>
+            <form id="signupForm">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <input type="tel" placeholder="Số điện thoại" required>
+                <button type="submit" class="btn-submit">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
