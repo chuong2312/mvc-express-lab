@@ -296,119 +296,20 @@
         </div>
     </div>
 
-    //LOGIN
-    <div class="container">
-        <!-- Login Form -->
-        <div id="loginForm" class="form-container">
-            <h2>🔐 Đăng Nhập</h2>
-            <p class="subtitle">Chào mừng bạn trở lại!</p>
-            
-            <div id="loginSuccess" class="success-message"></div>
-            <div id="loginError" class="error-message"></div>
-
-            <form onsubmit="handleLogin(event)">
-                <div class="input-group">
-                    <label for="loginEmail">📧 Email</label>
-                    <input type="email" id="loginEmail" placeholder="email@example.com" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="loginPassword">🔒 Mật khẩu</label>
-                    <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
-                </div>
-
-                <div class="forgot-password">
-                    <a href="#" onclick="showForgotPassword(); return false;">Quên mật khẩu?</a>
-                </div>
-
-                <button type="submit" class="btn">Đăng Nhập</button>
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSignup">&times;</span>
+            <h3>Đăng Ký Thành Viên</h3>
+            <p>Nhận ngay ưu đãi 20% cho lần đầu tiên!</p>
+            <form id="signupForm">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <input type="tel" placeholder="Số điện thoại" required>
+                <button type="submit" class="btn-submit">Đăng Ký</button>
             </form>
-
-            <div class="divider">
-                <span>hoặc</span>
-            </div>
-
-            <div class="switch-form">
-                Chưa có tài khoản? <a href="#" onclick="showSignup(); return false;">Đăng ký ngay</a>
-            </div>
-        </div>
-
-        <!-- Signup Form -->
-        <div id="signupForm" class="form-container hide">
-            <h2>✨ Đăng Ký</h2>
-            <p class="subtitle">Tạo tài khoản mới</p>
-
-            <div id="signupSuccess" class="success-message"></div>
-            <div id="signupError" class="error-message"></div>
-
-            <form onsubmit="handleSignup(event)">
-                <div class="input-group">
-                    <label for="signupName">👤 Họ và tên</label>
-                    <input type="text" id="signupName" placeholder="Nguyễn Văn A" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="signupEmail">📧 Email</label>
-                    <input type="email" id="signupEmail" placeholder="email@example.com" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="signupPassword">🔒 Mật khẩu</label>
-                    <input type="password" id="signupPassword" placeholder="Tối thiểu 6 ký tự" 
-                           oninput="checkPasswordStrength(this.value)" required>
-                    <div class="password-strength">
-                        <div id="strengthBar" class="password-strength-bar"></div>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="signupConfirm">🔒 Xác nhận mật khẩu</label>
-                    <input type="password" id="signupConfirm" placeholder="Nhập lại mật khẩu" required>
-                </div>
-
-                <button type="submit" class="btn">Đăng Ký</button>
-            </form>
-
-            <div class="divider">
-                <span>hoặc</span>
-            </div>
-
-            <div class="switch-form">
-                Đã có tài khoản? <a href="#" onclick="showLogin(); return false;">Đăng nhập</a>
-            </div>
-        </div>
-
-        <!-- Forgot Password Form -->
-        <div id="forgotForm" class="form-container hide">
-            <h2>🔑 Quên Mật Khẩu</h2>
-            <p class="subtitle">Nhập email để khôi phục mật khẩu</p>
-
-            <div id="forgotSuccess" class="success-message"></div>
-            <div id="forgotError" class="error-message"></div>
-
-            <form onsubmit="handleForgotPassword(event)">
-                <div class="input-group">
-                    <label for="forgotEmail">📧 Email</label>
-                    <input type="email" id="forgotEmail" placeholder="email@example.com" required>
-                </div>
-
-                <button type="submit" class="btn">Gửi Link Khôi Phục</button>
-            </form>
-
-            <div class="divider">
-                <span>hoặc</span>
-            </div>
-
-            <div class="switch-form">
-                <a href="#" onclick="showLogin(); return false;">← Quay lại đăng nhập</a>
-            </div>
         </div>
     </div>
-
-
 
     <script src="/js/script.js"></script>
 </body>
 </html>
-
-///comit test
