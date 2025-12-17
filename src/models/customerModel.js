@@ -10,13 +10,13 @@ const customerSchema = new mongoose.Schema({
 });
 
 // --- MỚI: Tự động mã hóa mật khẩu trước khi lưu ---
-customerSchema.pre('save', async function (next) {
+customerSchema.pre('save', async function () {
     if (!this.isModified('password')) {
-        return next();
+        return ;
     }
     const salt = await bcrypt.genSalt(10);
     this.password = await bcrypt.hash(this.password, salt);
-    next();
+    
 });
 
 // --- MỚI: Hàm kiểm tra mật khẩu khi đăng nhập ---
