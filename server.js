@@ -1,3 +1,4 @@
+const cookieParser = require('cookie-parser');
 const express = require('express');
 const app = express();
 const path = require('path'); // <--- 1. MỚI THÊM: Thư viện path để xử lý đường dẫn thư mục public
@@ -12,6 +13,7 @@ const courseRoutes = require('./src/routes/courseRoutes');
 const customerRoutes = require('./src/routes/customerRoutes'); // <--- 2. MỚI THÊM: Import route khách hàng vào
 
 app.use(express.json()); 
+app.use(cookieParser());
 
 // <--- 3. MỚI THÊM: Cấu hình thư mục chứa giao diện (HTML, CSS, JS, Ảnh)
 // Dòng này giúp trình duyệt đọc được file trong thư mục 'public'
